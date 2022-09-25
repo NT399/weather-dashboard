@@ -33,64 +33,64 @@ function getApi(name) {
         humidity.textContent = 'Humidity: ' + data.list[0].main.humidity + ' %'
 
         // Card 1 - displaying the temperature, wind and humidity of the subsequent day
-        date1.textContent = data.list[12].dt_txt.slice(0, -8)
+        date1.textContent = data.list[9].dt_txt.slice(0, -8)
         
         var source1 = document.getElementById('icon1');
         var img1 = document.createElement("img");
-        var weatherIcon1 = data.list[11].weather[0].icon
+        var weatherIcon1 = data.list[9].weather[0].icon
         source1.innerHTML = '';
 
         img1.src = "https://openweathermap.org/img/wn/" + weatherIcon1 + "@2x.png";
         source1.appendChild(img1);
 
-        temp1.textContent = 'Temp: ' + data.list[11].main.temp + ' °F'
-        wind1.textContent = 'Wind: ' + data.list[11].wind.speed + ' MPH'
-        humidity1.textContent = 'Humidity: ' + data.list[11].main.humidity + ' %'
+        temp1.textContent = 'Temp: ' + data.list[9].main.temp + ' °F'
+        wind1.textContent = 'Wind: ' + data.list[9].wind.speed + ' MPH'
+        humidity1.textContent = 'Humidity: ' + data.list[9].main.humidity + ' %'
 
         // Card 2 - displaying the temperature, wind and humidity of the subsequent day
-        date2.textContent = data.list[19].dt_txt.slice(0, -8)
+        date2.textContent = data.list[17].dt_txt.slice(0, -8)
        
         var source2 = document.getElementById('icon2');
         var img2 = document.createElement("img");
-        var weatherIcon2 = data.list[19].weather[0].icon
+        var weatherIcon2 = data.list[17].weather[0].icon
         source2.innerHTML = '';
 
         img2.src = "https://openweathermap.org/img/wn/" + weatherIcon2 + "@2x.png";
         source2.appendChild(img2);
 
-        temp2.textContent = 'Temp: ' + data.list[19].main.temp + ' °F'
-        wind2.textContent = 'Wind: ' + data.list[19].wind.speed + ' MPH'
-        humidity2.textContent = 'Humidity: ' + data.list[19].main.humidity + ' %'
+        temp2.textContent = 'Temp: ' + data.list[17].main.temp + ' °F'
+        wind2.textContent = 'Wind: ' + data.list[17].wind.speed + ' MPH'
+        humidity2.textContent = 'Humidity: ' + data.list[17].main.humidity + ' %'
 
         // Card 3 - displaying the temperature, wind and humidity of the subsequent day
-        date3.textContent = data.list[27].dt_txt.slice(0, -8)
+        date3.textContent = data.list[25].dt_txt.slice(0, -8)
        
         var source3 = document.getElementById('icon3');
         var img3 = document.createElement("img");
-        var weatherIcon3 = data.list[27].weather[0].icon
+        var weatherIcon3 = data.list[25].weather[0].icon
         source3.innerHTML = '';
 
         img3.src = "https://openweathermap.org/img/wn/" + weatherIcon3 + "@2x.png";
         source3.appendChild(img3);
 
-        temp3.textContent = 'Temp: ' + data.list[27].main.temp + ' °F'
-        wind3.textContent = 'Wind: ' + data.list[27].wind.speed + ' MPH'
-        humidity3.textContent = 'Humidity: ' + data.list[27].main.humidity + ' %'
+        temp3.textContent = 'Temp: ' + data.list[25].main.temp + ' °F'
+        wind3.textContent = 'Wind: ' + data.list[25].wind.speed + ' MPH'
+        humidity3.textContent = 'Humidity: ' + data.list[25].main.humidity + ' %'
 
         // Card 4 - displaying the temperature, wind and humidity of the subsequent day
-        date4.textContent = data.list[35].dt_txt.slice(0, -8)
+        date4.textContent = data.list[32].dt_txt.slice(0, -8)
        
         var source4 = document.getElementById('icon4');
         var img4 = document.createElement("img");
-        var weatherIcon4 = data.list[35].weather[0].icon
+        var weatherIcon4 = data.list[32].weather[0].icon
         source4.innerHTML = '';
 
         img4.src = "https://openweathermap.org/img/wn/" + weatherIcon4 + "@2x.png";
         source4.appendChild(img4);
 
-        temp4.textContent = 'Temp: ' + data.list[35].main.temp + ' °F'
-        wind4.textContent = 'Wind: ' + data.list[35].wind.speed + ' MPH'
-        humidity4.textContent = 'Humidity: ' + data.list[35].main.humidity + ' %'
+        temp4.textContent = 'Temp: ' + data.list[32].main.temp + ' °F'
+        wind4.textContent = 'Wind: ' + data.list[32].wind.speed + ' MPH'
+        humidity4.textContent = 'Humidity: ' + data.list[32].main.humidity + ' %'
  
       // Card 5 - displaying the temperature, wind and humidity of the subsequent day
         date5.textContent = data.list[39].dt_txt.slice(0, -8)
