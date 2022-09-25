@@ -8,7 +8,7 @@
   <meta name="Description" content="Enter your description here" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 
-  <title>Weather</title>
+  <title>Weather dashboard</title>
 </head>
 
 <body>
@@ -20,30 +20,25 @@
 
   <hr />
 
+<!-- Main box with current temp, wind and humidity -->
   <main class="container-fluid">
     <section class="row">
       <div class="col-12 col-md-2">
   
         <h2>Search for city</h2>
-
-        <!-- <form id="search-bar" class="form-inline">
-          <input id="search" class="form-control mr-sm-2" type="text" placeholder="Enter city name" aria-label="Search"> -->
           <input id="search" type="text">
           <button id="search-button" class="btn btn-outline-success my-2 my-sm-1" type="submit">Search</button>
-        <!-- </form> -->
-        <p>
-        
-        </p>
-        <button id="button1" class="btn btn-block btn-info"> </button>
-        <button class="btn btn-block btn-info">Learn more.</button>
+  
+        <hr id="appendButtons"/>
       
       </div>
 
+      <!-- Cards for each of the subsequent day details are below -->
       <div class="col-12 col-md-10">
         <div class="col-12 col-sm-6 col-lg-12 mb-3">
           <div class="card">
             <h3 id="city-name" class="card-header">
-            City - Date
+
             </h3>
             <div class="card-body">
               <div id="icon"></div>
